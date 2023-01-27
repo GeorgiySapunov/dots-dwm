@@ -1,0 +1,5 @@
+*.log
+/local/.local/share/wallpaper.jpg
+/local/.local/share/bg
+/zsh/.config/zsh/.zcompdump
+/zsh/.config/zsh/.zsh_history
