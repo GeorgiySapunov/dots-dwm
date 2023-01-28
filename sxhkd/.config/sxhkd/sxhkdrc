@@ -165,7 +165,7 @@ super + F8
 				mw -Y
 # Mount a USB drive or Android device
 super + {F9,F10}
-				{dmenumount,dmenuumount}
+				{mounter,unmounter}
 super + F11
 				mpv --no-cache --no-osc --no-input-default-bindings --profile=low-latency --input-conf=/dev/null --title=webcam $(ls /dev/video[0,2,4,6,8] | tail -n 1)
 super + F12
