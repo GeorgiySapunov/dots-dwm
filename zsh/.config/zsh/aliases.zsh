@@ -31,12 +31,14 @@ alias ip="ip -color=auto"
 alias cp="cp -iv"
 alias mv='mv -iv'
 alias rm='rm -iv'
+alias rsync="rsync -vrPlu"
 
 # yt-dlp
 alias yt="yt-dlp --embed-metadata -i --write-sub "
 alias ytp="yt -o \"%(playlist_index)s-%(title)s.%(ext)s\""
 alias yta="yt-dlp -x -f bestaudio/best --audio-format mp3"
 alias ytpa="yta -o \"%(playlist_index)s-%(title)s.%(ext)s\""
+alias ytt="yt --skip-download --write-thumbnail"
 alias ffmpeg="ffmpeg -hide_banner"
 alias mpv="mpv --save-position-on-quit"
 
