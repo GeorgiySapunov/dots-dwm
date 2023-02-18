@@ -17,7 +17,8 @@ function draw_clear {
 }
 
 function draw_image {
-    kitty +kitten icat --transfer-mode file --place "$3x$2@$4x$5" "$1"
+    kitty +kitten icat --silent --stdin no --transfer-mode file \
+        --place "$3x$2@$4x$5" "$1" < /dev/null > /dev/tty
 }
 
 function make_video {
@@ -36,7 +37,7 @@ function make_pdf {
 }
 
 check_cache
-draw_clear
+# draw_clear
 case $(file -b --mime-type "$1") in
 	text/html)
         lynx -width="$4" -display_charset=utf-8 -dump "$1"
