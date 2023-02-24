@@ -24,6 +24,8 @@ export UNISON="$XDG_DATA_HOME/unison"
 # export HISTFILE="$XDG_DATA_HOME/history"
 export MBSYNCRC="$XDG_CONFIG_HOME/mbsync/config"
 export ELECTRUMDIR="$XDG_DATA_HOME/electrum"
+export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc"
+export SQLITE_HISTORY="$XDG_DATA_HOME/sqlite_history"
 
 export KERAS_HOME="$XDG_STATE_HOME/keras"
 export TEXMFVAR="$XDG_CACHE_HOME/texlive/texmf-var"
