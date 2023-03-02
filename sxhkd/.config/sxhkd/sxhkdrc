@@ -162,7 +162,7 @@ super + F7
 				td-toggle
 # sync email
 super + F8
-				mw -Y
+				mailsync
 # Mount a USB drive or Android device
 super + {F9,F10}
 				{mounter,unmounter}
