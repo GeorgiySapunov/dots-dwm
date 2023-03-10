@@ -2,7 +2,7 @@
 
 # Unmount USB drives or Android phones. Replaces the older `${DMENU}umount`. Fewer
 # prompt and also de-decrypts LUKS drives that are unmounted.
-DMENU="rofi -dmenu"
+DMENU="dmenu"
 
 set -e
 
