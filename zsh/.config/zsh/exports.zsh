@@ -4,6 +4,10 @@ export EDITOR="nvim"
 export TERMINAL="kitty"
 export BROWSER="brave"
 
+# Change the default crypto/weather monitor sites.
+# export CRYPTOURL="rate.sx"
+# export WTTRURL="wttr.in"
+
 export XINITRC="$XDG_CONFIG_HOME/x11/xinitrc"
 #export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority" # This line will break some DMs.
 export NOTMUCH_CONFIG="$XDG_CONFIG_HOME/notmuch-config"
