@@ -12,7 +12,7 @@ ibus-daemon -drxR # ibus input method
 autostart="mpd picom dunst unclutter sxhkd remapd"
 
 for program in $autostart; do
-    pidof -s "$program" || "$program" &
+    pidof -sx "$program" || "$program" &
 done >/dev/null 2>&1
 
 sleep 1
