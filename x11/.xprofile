@@ -3,6 +3,7 @@
 # This file runs when a DM logs you into a graphical session.
 # If you use startx/xinit like a Chad, this file will also be sourced.
 
+artix-pipewire
 xrandr --dpi 96		# Set DPI. User may want to use a larger number for larger screens.
 setbg &			# set the background with the `setbg` script
 xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources & xrdbpid=$!	# Uncomment to use Xresources colors/settings on startup
@@ -17,7 +18,6 @@ done >/dev/null 2>&1
 
 sleep 1
 screenlock &
-artix-pipewire-loader &
 # pipewire &
 # pipewire-pulse &
 
