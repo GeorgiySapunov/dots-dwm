@@ -16,7 +16,7 @@ super + d
 super + shift + d
 				ibus engine xkb:us::eng && passmenu
 super + r
-				ibus engine xkb:us::eng && $TERMINAL -e lf
+				ibus engine xkb:us::eng && $TERMINAL -e lfub
 super + shift + r
 				$TERMINAL -e htop
 super + e
@@ -143,7 +143,7 @@ XF86TaskPane
 XF86Mail
 				$TERMINAL -e neomutt ; pkill -RTMIN+12 dwmblocks
 XF86MyComputer
-				$TERMINAL -e lf /
+				$TERMINAL -e lfub /
 
 # Change display
 super + F1
