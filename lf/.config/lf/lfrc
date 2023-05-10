@@ -113,6 +113,23 @@ map X !$f
 map o &mimeopen "$f"
 map O $mimeopen --ask "$f"
 
+map <c-а> $lf -remote "send $id select \"$(fzf)\""
+map О $lf -remote "send $id cd $(sed -e 's/\s*#.*//' -e '/^$/d' -e 's/^\S*\s*//' ${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-dirs | fzf)"
+map пр
+map п top
+map В delete
+map У extract
+map С copyto
+map Ь moveto
+map <c-т> push :mkdir<space>
+map <c-к> reload
+map <c-ы> set hidden!
+map <enter> shell
+map ч $$f
+map Ч !$f
+map щ &mimeopen "$f"
+map Щ $mimeopen --ask "$f"
+
 map A rename # at the very end
 map c push A<c-u> # new rename
 map I push A<c-a> # at the very beginning
@@ -121,13 +138,53 @@ map a push A<a-b> # after extension
 map B bulkrename
 map b $setbg $f
 
+map Ф rename # at the very end
+map с push A<c-u> # new rename
+map I push A<c-a> # at the very beginning
+map ш push A<a-b><a-b><a-b> # before extension
+map ф push A<a-b> # after extension
+map И bulkrename
+map и $setbg $f
+
 map <c-e> down
 map <c-y> up
 map V push :!nvim<space>
 
+map <c-у> down
+map <c-н> up
+map М push :!nvim<space>
+
 map W $setsid -f $TERMINAL >/dev/null 2>&1
 
+map Ц $setsid -f $TERMINAL >/dev/null 2>&1
+
 map Y $printf "%s" "$fx" | xclip -selection clipboard
+
+map Н $printf "%s" "$fx" | xclip -selection clipboard
+
+map о down
+map л up
+map р updir
+map д open
+map П bottom
+map н copy
+map в cut
+map з paste
+
+map яр set hidden!
+map яр set hidden!
+map як set reverse!
+map ят set info
+map яы set info size
+map яе set info time
+map яф set info size:time
+map ыт :set sortby natural; set info
+map ыы :set sortby size; set info size
+map ые :set sortby time; set info time
+map ыф :set sortby atime; set info atime
+map ыс :set sortby ctime; set info ctime
+map ыу :set sortby ext; set info
+map пр cd ~
 
 # Source Bookmarks
 source "~/.config/lf/shortcutrc"
