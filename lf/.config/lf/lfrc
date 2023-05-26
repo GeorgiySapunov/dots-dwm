@@ -130,19 +130,19 @@ map Ч !$f
 map щ &mimeopen "$f"
 map Щ $mimeopen --ask "$f"
 
-map A rename # at the very end
+map A :rename; cmd-end # at the very end
 map c push A<c-u> # new rename
-map I push A<c-a> # at the very beginning
-map i push A<a-b><a-b><a-f> # before extension
-map a push A<a-b> # after extension
+map I :rename; cmd-home # at the very beginning
+map i :rename # before extension
+map a :rename; cmd-right # after extension
 map B bulkrename
 map b $setbg $f
 
-map Ф rename # at the very end
+map Ф :rename; cmd-end # at the very end
 map с push A<c-u> # new rename
-map I push A<c-a> # at the very beginning
-map ш push A<a-b><a-b><a-b> # before extension
-map ф push A<a-b> # after extension
+map I :rename; cmd-home # at the very beginning
+map ш :rename # before extension
+map ф :rename; cmd-right # after extension
 map И bulkrename
 map и $setbg $f
 
