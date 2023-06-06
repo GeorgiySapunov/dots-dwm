@@ -40,7 +40,7 @@ super + shift + c
 super + w
 				$BROWSER
 super + shift + w
-				$TERMINAL -e sudo nmtui
+				$TERMINAL -e nmtui
 super + ctrl + w
 				qutebrowser
 
